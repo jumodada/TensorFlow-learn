@@ -1,0 +1,81 @@
+# Python相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+tensorflow-env/
+venv/
+env/
+ENV/
+
+# IDE相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# 模型文件
+*.h5
+*.pb
+*.ckpt
+*.tflite
+saved_model/
+checkpoints/
+
+# 数据文件
+*.csv
+*.json
+*.pkl
+*.npy
+*.npz
+data/
+datasets/
+
+# 日志文件
+*.log
+logs/
+tensorboard/
+
+# 缓存文件
+.cache/
+.pytest_cache/
+
+# Mac相关
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 临时文件
+*.tmp
+*.temp
+model_summary.txt
+
+# 图像文件
+*.png
+*.jpg
+*.jpeg
+*.gif
+plots/ 
