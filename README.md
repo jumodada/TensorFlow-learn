@@ -17,19 +17,13 @@ TensorFlow学习
 
 ### 1. SSH连接到Ubuntu服务器
 
-```bash
-# 从Mac连接到Ubuntu服务器
-ssh username@your-server-ip
-
-# 或使用密钥连接
-ssh -i ~/.ssh/your-key username@your-server-ip
-```
+推荐软件： Termius
 
 ### 2. 克隆项目到服务器
 
 ```bash
 # 克隆项目（如果从Git仓库）
-git clone <your-repo-url>
+git clone https://github.com/jumodada/TensorFlow-learn.git
 cd TensorFlow-learn
 
 # 或直接创建项目目录
