@@ -4,11 +4,14 @@ TensorFlow学习
 
 ## 环境要求
 
-- **服务器端**: Ubuntu 24.04.2 LTS
-- Python 3.9+
-- TensorFlow 2.x
+- **服务器端**: Ubuntu 20.04+ (推荐 Ubuntu 24.04.2 LTS)
+- Python 3.9+ (已测试: 3.9, 3.10, 3.11, 3.12)
+- TensorFlow 2.17+ (最新稳定版)
 
-> 💡 **注意**: 本项目设计为在Ubuntu服务器上运行，你可以通过SSH从Mac连接到Ubuntu服务器进行学习。
+> 💡 **注意**: 
+> - 本项目设计为在Ubuntu服务器上运行，你可以通过SSH从Mac连接到Ubuntu服务器进行学习
+> - Ubuntu 24.04对Python包管理有新的安全机制，强烈建议使用虚拟环境
+> - 支持CPU和GPU版本的TensorFlow
 
 ## 快速开始
 
@@ -45,14 +48,15 @@ chmod +x setup.sh
 # 更新系统包
 sudo apt update && sudo apt upgrade -y
 
-# 安装Python和pip
-sudo apt install python3 python3-pip python3-venv -y
+# 安装Python和必要依赖
+sudo apt install python3 python3-pip python3-venv python3-full python3-dev -y
 
 # 创建虚拟环境
 python3 -m venv tensorflow-env
 source tensorflow-env/bin/activate
 
-# 安装依赖
+# 升级pip和安装依赖
+pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
 
